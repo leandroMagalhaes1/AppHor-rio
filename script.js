@@ -1,10 +1,17 @@
+
+let totalGastos = 0;
 const submit = function(){
     let text = document.getElementById("i_text").value;
     let textArea = document.getElementById("text_area");
- 
-    console.log(text);
-    if(text != ""){
-        //console.log(text.value);
-        textArea.value += text + "\n";
+    let price = document.getElementById("i_textPrice").value;
+    let gastos = document.getElementById("i_gastos");
+  
+
+    if(text != "" && price != ""){
+        textArea.value += text +" "+ price + " \n";
+        totalGastos += Number(price);
+        gastos.textContent = totalGastos.toFixed(2);
     }
+
 }
+
