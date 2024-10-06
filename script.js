@@ -5,7 +5,6 @@ const submit = function(){
     let textArea = document.getElementById("text_area");
     let price = document.getElementById("i_textPrice").value;
     let gastos = document.getElementById("i_gastos");
-  
 
     if(text != "" && price != ""){
         textArea.value += text +" "+ price + " \n";
@@ -13,5 +12,6 @@ const submit = function(){
         gastos.textContent = totalGastos.toFixed(2);
     }
 
+    
 }
 
