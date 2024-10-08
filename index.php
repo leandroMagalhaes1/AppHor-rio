@@ -1,6 +1,7 @@
 <?php 
-
-    define('NAME','Leandro');
+    
+    $name = "Leandro";
+    $data = date("l"); 
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <h1><?php echo "Bem vindo ". NAME; ?></h1>
+    <h1><?php echo "Bem vindo ". $name. " Hoje é ".$data; ?></h1>
     <h2>Adiciona gasto</h2>
 
     <div id="div_text" style="display: flex; align-items: center;">
@@ -34,9 +35,8 @@
     <br>
     <label for="i_gasto">Total gasto:</label>
     <span id="i_gastos">0</span>
-    
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>
